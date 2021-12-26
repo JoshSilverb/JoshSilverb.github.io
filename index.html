@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Josh Silverberg</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; display: inline}
 body, html {
   height: 100%;
   color: #777;
@@ -24,7 +24,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  background-image: url('./images/josh_pic_cropped.jpg');
   min-height: 100%;
 }
 
@@ -61,7 +61,8 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXPERIENCE</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SKILLS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -71,7 +72,8 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -80,176 +82,165 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JOSH SILVERBERG</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+  <p>My name is Josh Silverberg. I am a third-year undergraduate studying <b>Computer Science</b> with minors in <b>Mathematics</b> and <b>Applied Statistics</b> at the University of Michigan.
+     I am passionate about ML engineering, especially in the field of natural language processing (NLP), and have been exploring these fields though my projects, internships, and research as outlined below.
+     Outside of work, I am a project leader and project committee member on the <a href="https://www.mdst.club">Michigan Data Science Team (MDST)</a>, and play ice hockey as a <a href="./images/hockey_pic.jpg">goalie</a> in the Ann Arbor men's league.
+     I am currently an incoming Software Engineering Intern position at Bloomberg L.P. in NYC for the summer of 2021.
+  </p>
+  <p>
+      
+  </p>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<div class="w3-content w3-container w3-padding-64" id="experience">
+  <h3 class="w3-center">EXPERIENCE</h3>
+  <p><h4><em><b>Professional experience:</b></em></h4></p>
+
+  <p><h4>Bloomberg L.P.</h4> - New York, NY</p>
+  <p><em>Software Engineering Intern • May 2022 - July 2022</em></p>
+  <li>Incoming summer 2021 intern on Alexa Brain in the Devices Organization</li>
+
+  <p><h4>Amazon</h4> - Seattle, WA</p>
+  <p><em>Software Development Engineering Intern • 2021</em></p>
+  <li>Worked in the Alexa Brain Metrics and Learning team, where I created the first logging system for a rewrite generation pipeline.
+    This logging system was designed to enable detailed online model evaluation, making improving the rewrite generation system easier and quicker.</li>
+  <li>Designed, planned, and built a logging system to securely handle up to 1800 TPS of logs up to 5KB each, containing potentially confidential or private data</li>
+  <li>modernized and extended the abilities of existing in-house logging library to work within a NAWS architecture, and integrated it into production code using Google Guice.
+     Then updated the rewrite pipeline's AWS CDK scripts to automatically deploy the infrastructure required for logging system to securely communicate with the datalake the logs were sent to.</li>
+
+  <p><h4>Zazraak</h4> - Bratislava, Slovakia</p>
+  <p><em>Development Intern • Jul 2020 - Mar 2021</em></p>
+  <li>Implemented an extractive text summarization algorithm using key-term analysis using the SpaCy and NLTK Python NLP libraries</li>
+  <li>Developed an automated end-to-end question generation and text summarization system for formative assessments in online education</li>
+  <li>Led full-stack deployment of pipeline by building a web app on Google Cloud Platform with Python Flask, and building the frontend deployment as a Google Docs plugin using HTML/CSS, JavaScript, and Google Apps Script</li>
+  <li>In addition to the software development, I took an important role in the business development side of the startup, beginning by creating personas/empathy map using secondary resources, performing needs analysis, and ideating solutions using the Stanford D-School Design Thinking methodology.</li>
+  
+  <br>
+
+  <p><h4><em><b>Project experience:</b></em></h4></p>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <a href="https://github.com/JoshSilverb/ssp_ml" style="text-decoration:none"><img src="./images/twitter-stocks.png" style="width:100%" class="w3-hover-opacity">
+      Tweet stock sentiment prediction</a>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <a href="https://github.com/JoshSilverb/chatbot" style="text-decoration:none"><img src="./images/chatbot.jpg" style="width:100%" class="w3-hover-opacity">
+      Conversational chatbot</a>
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+      <a href="https://github.com/JoshSilverb/title_generation" style="text-decoration:none"><img src="./images/music.jpg" style="width:100%" class="w3-hover-opacity">
+        Title prediction from song lyrics</a>
+      </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
+      <a href="https://github.com/JoshSilverb/double_ended_sorts" style="text-decoration:none"><img src="./images/cpp_logo.png" style="width:100%" class="w3-hover-opacity">
+        C++ library of double-ended versions of elementary sorts</a>
+      </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+      <a href="https://github.com/JoshSilverb/RNN-reddit-comGen" style="text-decoration:none"><img src="./images/reddit.png" style="width:100%" class="w3-hover-opacity">
+        UROP research project on automatic Reddit comment generation</a>
+      </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
+      <a href="https://github.com/JoshSilverb/mdst_nlp_2021" style="text-decoration:none"><img src="./images/mdst_logo.png" style="width:100%" class="w3-hover-opacity">
+        Styled text generation project I led at MDST in FA2021</a>
+      </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+<div class="w3-content w3-container w3-padding-64" id="skills">
+  <h3 class="w3-center">SKILLS</h3>
+  <p><h4><em><b>Programming:</b></em></h4></p>
+  <div class="w3-light-grey">
+      <div style="display: flex;justify-content: space-between;">
+        <div>Bash</div>
+        <div>C/C++</div>
+        <div>HTML/CSS</div>
+        <div>Java</div>
+        <div>Node.js</div>
+        <div>Python</div>
+      </div>
+  </div>
+  <p><h4><em><b>Machine Learning:</b></em></h4></p>
+  <div class="w3-light-grey">
+    <div style="display: flex;justify-content: space-between;">
+        <div>NLTK</div>
+        <div>Pandas</div>
+        <div>PyTorch</div>
+        <div>Scikit-learn</div>
+        <div>SpaCy</div>
+        <div>Tensorflow</div>
+      </div>
+  </div>
+  <p><h4><em><b>Technologies:</b></em></h4></p>
+  <div class="w3-light-grey">
+    <div style="display: flex;justify-content: space-between;">
+        <div>AWS</div>
+        <div>GCP</div>
+        <div>Git</div>
+        <div>Jupyter Notebook</div>
+        <div>Make</div>
+        <div>Office Suite</div>
+        <div>VS Code</div>
+      </div>
+  </div>
+  <p><h4><em><b>Soft Skills:</b></em></h4></p>
+  <div class="w3-light-grey">
+    <div style="display: flex;justify-content: space-between;width: 50%;">
+        <div>Public Speaking</div>
+        <div>Project Management</div>
+        <div>Research</div>
+      </div>
+  </div>
+  <p><h4><em><b>Languages:</b></em></h4></p>
+  <div class="w3-light-grey">
+    <div style="display: flex;justify-content: space-between;width: 50%;">
+        <div>English (native)</div>
+        <div>Slovak (fluent)</div>
+        <div>German (advanced)</div>
+      </div>
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with Portfolio Text
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
-
+ -->
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
+  <h3 class="w3-center">CONTACT</h3>
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ann Arbor, MI<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: joshsilv [at] umich [dot] edu<br>
+        Extra info: <a href="linkedin.com/in/joshua-silverberg/">LinkedIn</a>, <a href="https://github.com/JoshSilverb">GitHub</a><br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
