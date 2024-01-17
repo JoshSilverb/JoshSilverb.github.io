@@ -74,6 +74,10 @@ body {
     color: #a4a4a4;
 }
 
+.currentjobdesc {
+    font-size: 0.90em;
+}
+
 .jobdesc {
     font-size: 0.75em;
 }
