@@ -227,6 +227,59 @@ body {
     line-height: 1.5;
 }
 
+/* Project cards */
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    border-color: #999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.project-link {
+    margin-left: auto;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.project-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.project-tech {
+    display: flex;
+    gap: 8px;
+    padding-left: 0;
+}
+
+.modal-content .project-header {
+    margin-bottom: 10px;
+}
+
+.modal-content .project-tech {
+    margin-bottom: 15px;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 600px) {
     .sidenav {
