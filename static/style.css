@@ -1,14 +1,31 @@
+/* Reset and box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
 /* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: #111;
+    overflow-x: hidden;
     padding-top: 20px;
+}
+
+.sidenav h2 {
+    color: #ffffff;
+    padding: 0 16px;
 }
 
 /* The navigation menu links */
@@ -18,27 +35,36 @@
     font-size: 25px;
     color: #818181;
     display: block;
+    white-space: nowrap;
 }
-  
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
 }
-  
-/* Style page content */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-}
-  
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+/* Active page styling */
+.sidenav a.active {
+    color: #ffffff;
 }
 
-body {
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+/* Style page content */
+.main {
+    margin-left: 220px;
+    padding: 0px 10px;
+    max-width: 900px;
+}
+
+/* List styling for job descriptions */
+.jobdesc ul,
+.currentjobdesc ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.jobdesc li,
+.currentjobdesc li {
+    margin-bottom: 5px;
 }
 
 .gallery {
@@ -51,15 +77,13 @@ body {
 .homepic {
     float: right;
     margin-left: 10px;
-    clear:both;
+    clear: both;
 }
 
 .hometext {
     margin-right: 0px;
-    overflow:auto;
-    display:block;
-
-    
+    overflow: auto;
+    display: block;
 }
 
 .hometext a:link {
@@ -92,4 +116,45 @@ body {
 
 .socmedicon:hover {
     opacity: 0.7;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 10px;
+    }
+    .sidenav h2 {
+        text-align: center;
+        padding: 10px;
+    }
+    .sidenav a {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+    .main {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .homepic {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
