@@ -20,63 +20,218 @@
 	<div class="main">
 		<h1>Professional experience</h1>
 
-        <p><h3><img src="./images/bloomberg-icon.svg" width="24px" height="24px" style="vertical-align:middle; padding-right: 5px;" />Bloomberg L.P. - New York, NY</h3></p>
-        <div class="currentjobdesc">
-        <p><em>Software Engineer (full time) • August 2023 - Present</em></p>
-        <ul>
-        <li>Currently on the Market Data Distribution team working on reliable and scalable exchange data streaming to clients around the world.</li>
-        </ul>
-        </div>
+		<div class="experience-card" onclick="openModal('modal-bloomberg-ft')">
+			<div class="experience-header">
+				<img src="./images/bloomberg-icon.svg" width="24px" height="24px" />
+				<span class="company-name">Bloomberg L.P.</span>
+				<span class="company-location">New York, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineer (full time)</span>
+				<span class="job-period">August 2023 - Present</span>
+			</div>
+		</div>
 
-        <p><img src="./images/bloomberg-icon.svg" width="16px" height="16px" style="vertical-align:middle; padding-right: 5px;" /><b>Bloomberg L.P.</b> - New York, NY</p>
-        <div class="jobdesc">
-        <p><em>Software Engineering Intern • May 2022 - July 2022</em></p>
-        <ul>
-        <li>Summer 2022 intern on the Financial Analytics team working on scalable bond ETF pricing technology.</li>
-        </ul>
-        </div>
+		<div class="experience-card" onclick="openModal('modal-bloomberg-intern')">
+			<div class="experience-header">
+				<img src="./images/bloomberg-icon.svg" width="24px" height="24px" />
+				<span class="company-name">Bloomberg L.P.</span>
+				<span class="company-location">New York, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineering Intern</span>
+				<span class="job-period">May 2022 - July 2022</span>
+			</div>
+		</div>
 
-        <p><img src="./images/oats-icon-small.png" height="16px" style="vertical-align:middle; padding-right: 5px;" /><b>OATS Technology Inc.</b> - Elmsford, NY</p>
-        <div class="jobdesc">
-        <p><em>Software Engineer • Nov 2021 - Dec 2021</em></p>
-        <ul>
-        <li>Designed and implemented backend system to accurately extract named entities of various forms from text streams.</li>
-        </ul>
-        </div>
+		<div class="experience-card" onclick="openModal('modal-oats')">
+			<div class="experience-header">
+				<img src="./images/oats-icon-small.png" height="24px" />
+				<span class="company-name">OATS Technology Inc.</span>
+				<span class="company-location">Elmsford, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineer</span>
+				<span class="job-period">Nov 2021 - Dec 2021</span>
+			</div>
+		</div>
 
+		<div class="experience-card" onclick="openModal('modal-amazon')">
+			<div class="experience-header">
+				<img src="./images/amazon-icon.svg" width="24px" height="24px" />
+				<span class="company-name">Amazon</span>
+				<span class="company-location">Seattle, WA</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Development Engineering Intern</span>
+				<span class="job-period">May 2021 - July 2021</span>
+			</div>
+		</div>
 
-        <p><img src="./images/amazon-icon.svg" width="16px" height="16px" style="vertical-align:middle; padding-right: 5px;" /><b>Amazon</b> - Seattle, WA</p>
-        <div class="jobdesc">
-        <p><em>Software Development Engineering Intern • May 2021 - July 2021</em></p>
-        <ul>
-        <li>Worked on the Alexa Brain Metrics and Learning team on utterance rewrite generation pipeline.</li>
-        <li>Created secure logging system for evaluation of model functionality in distributed container workflow.</li>
-        <li>Designed, planned, and built system to securely handle up to 1800 TPS of 5KB confidential logs with negligible latency overhead on critical path.</li>
-        </ul>
-        </div>
+		<div class="experience-card" onclick="openModal('modal-zazraak')">
+			<div class="experience-header">
+				<img src="./images/zazraak-icon.png" width="24px" height="24px" />
+				<span class="company-name">Zazraak</span>
+				<span class="company-location">Bratislava, Slovakia</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Development Intern</span>
+				<span class="job-period">Jul 2020 - Mar 2021</span>
+			</div>
+		</div>
 
-
-        <p><img src="./images/zazraak-icon.png" width="16px" height="16px" style="vertical-align:middle; padding-right: 5px;" /><b>Zazraak</b> - Bratislava, Slovakia</p>
-        <div class="jobdesc">
-        <p><em>Development Intern • Jul 2020 - Mar 2021</em></p>
-        <ul>
-        <li>Implemented an extractive text summarization algorithm using key-term analysis using the SpaCy and NLTK Python NLP libraries.</li>
-        <li>Developed an automated end-to-end question generation and text summarization system for formative assessments in online education.</li>
-        <li>Led full-stack deployment of pipeline as a web app on GCP using Flask with frontend deployment as a Google Docs plugin.</li>
-        </ul>
-        </div>
-
-
-        <p><img src="./images/urop-icon.jpg" width="16px" height="16px" style="vertical-align:middle; padding-right: 5px;" /><b>Machine Learning for Social Media Lab</b> - Ann Arbor, MI</p>
-        <div class="jobdesc">
-        <p><em>Undergraduate Researcher • Oct 2019 - May 2020</em></p>
-        <ul>
-        <li>Initiated, planned, and executed project comparing two RNN models' adherence to subreddit comment styles in generated responses to prompts.</li>
-        <li>Compiled and synthesized almost 100 academic papers into executive summaries in meta-research phase.</li>
-        <li>Modified code from ACL paper on LSTM seq2seq comment generation and built custom scraper to selectively aggregate dataset of almost 9000 comments.</li>
-        </ul>
-        </div>
-
+		<div class="experience-card" onclick="openModal('modal-urop')">
+			<div class="experience-header">
+				<img src="./images/urop-icon.jpg" width="24px" height="24px" />
+				<span class="company-name">Machine Learning for Social Media Lab</span>
+				<span class="company-location">Ann Arbor, MI</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Undergraduate Researcher</span>
+				<span class="job-period">Oct 2019 - May 2020</span>
+			</div>
+		</div>
 	</div>
+
+	<!-- Modals -->
+	<div id="modal-bloomberg-ft" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-bloomberg-ft')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/bloomberg-icon.svg" width="32px" height="32px" />
+				<span class="company-name">Bloomberg L.P.</span>
+				<span class="company-location">New York, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineer (full time)</span>
+				<span class="job-period">August 2023 - Present</span>
+			</div>
+			<ul class="modal-details">
+				<li>Currently on the Market Data Distribution team working on reliable and scalable exchange data streaming to clients around the world.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-bloomberg-intern" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-bloomberg-intern')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/bloomberg-icon.svg" width="32px" height="32px" />
+				<span class="company-name">Bloomberg L.P.</span>
+				<span class="company-location">New York, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineering Intern</span>
+				<span class="job-period">May 2022 - July 2022</span>
+			</div>
+			<ul class="modal-details">
+				<li>Summer 2022 intern on the Financial Analytics team working on scalable bond ETF pricing technology.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-oats" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-oats')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/oats-icon-small.png" height="32px" />
+				<span class="company-name">OATS Technology Inc.</span>
+				<span class="company-location">Elmsford, NY</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Engineer</span>
+				<span class="job-period">Nov 2021 - Dec 2021</span>
+			</div>
+			<ul class="modal-details">
+				<li>Designed and implemented backend system to accurately extract named entities of various forms from text streams.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-amazon" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-amazon')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/amazon-icon.svg" width="32px" height="32px" />
+				<span class="company-name">Amazon</span>
+				<span class="company-location">Seattle, WA</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Software Development Engineering Intern</span>
+				<span class="job-period">May 2021 - July 2021</span>
+			</div>
+			<ul class="modal-details">
+				<li>Worked on the Alexa Brain Metrics and Learning team on utterance rewrite generation pipeline.</li>
+				<li>Created secure logging system for evaluation of model functionality in distributed container workflow.</li>
+				<li>Designed, planned, and built system to securely handle up to 1800 TPS of 5KB confidential logs with negligible latency overhead on critical path.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-zazraak" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-zazraak')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/zazraak-icon.png" width="32px" height="32px" />
+				<span class="company-name">Zazraak</span>
+				<span class="company-location">Bratislava, Slovakia</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Development Intern</span>
+				<span class="job-period">Jul 2020 - Mar 2021</span>
+			</div>
+			<ul class="modal-details">
+				<li>Implemented an extractive text summarization algorithm using key-term analysis using the SpaCy and NLTK Python NLP libraries.</li>
+				<li>Developed an automated end-to-end question generation and text summarization system for formative assessments in online education.</li>
+				<li>Led full-stack deployment of pipeline as a web app on GCP using Flask with frontend deployment as a Google Docs plugin.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-urop" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal('modal-urop')">&times;</span>
+			<div class="experience-header">
+				<img src="./images/urop-icon.jpg" width="32px" height="32px" />
+				<span class="company-name">Machine Learning for Social Media Lab</span>
+				<span class="company-location">Ann Arbor, MI</span>
+			</div>
+			<div class="experience-role">
+				<span class="job-title">Undergraduate Researcher</span>
+				<span class="job-period">Oct 2019 - May 2020</span>
+			</div>
+			<ul class="modal-details">
+				<li>Initiated, planned, and executed project comparing two RNN models' adherence to subreddit comment styles in generated responses to prompts.</li>
+				<li>Compiled and synthesized almost 100 academic papers into executive summaries in meta-research phase.</li>
+				<li>Modified code from ACL paper on LSTM seq2seq comment generation and built custom scraper to selectively aggregate dataset of almost 9000 comments.</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		function openModal(modalId) {
+			document.getElementById(modalId).style.display = 'flex';
+		}
+
+		function closeModal(modalId) {
+			document.getElementById(modalId).style.display = 'none';
+		}
+
+		// Close modal when clicking outside of it
+		window.onclick = function(event) {
+			if (event.target.classList.contains('modal')) {
+				event.target.style.display = 'none';
+			}
+		}
+
+		// Close modal with Escape key
+		document.addEventListener('keydown', function(event) {
+			if (event.key === 'Escape') {
+				document.querySelectorAll('.modal').forEach(function(modal) {
+					modal.style.display = 'none';
+				});
+			}
+		});
+	</script>
 </body>
 </html>

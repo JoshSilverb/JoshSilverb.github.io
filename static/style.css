@@ -118,6 +118,115 @@ body {
     opacity: 0.7;
 }
 
+/* Experience cards */
+.experience-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.experience-card:hover {
+    border-color: #999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.experience-header img {
+    flex-shrink: 0;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.company-location {
+    color: #666;
+    margin-left: auto;
+}
+
+.experience-role {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 34px;
+}
+
+.job-title {
+    font-style: italic;
+}
+
+.job-period {
+    color: #666;
+    margin-left: auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 45px 35px 35px 35px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-content .experience-header {
+    margin-bottom: 10px;
+}
+
+.modal-content .experience-role {
+    margin-bottom: 15px;
+}
+
+.modal-details {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.modal-details li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 600px) {
     .sidenav {
@@ -147,6 +256,16 @@ body {
     }
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .experience-header,
+    .experience-role {
+        flex-wrap: wrap;
+    }
+    .company-location,
+    .job-period {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 34px;
     }
 }
 
