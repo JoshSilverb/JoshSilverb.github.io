@@ -297,7 +297,7 @@ body {
 }
 
 /* Responsive design for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .sidenav {
         width: 100%;
         height: auto;
@@ -318,10 +318,11 @@ body {
         padding: 10px;
     }
     .hstack.page-layout {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
-    .homepic {
+    .hstack.page-layout > .homepic {
+        order: -1;
         margin-bottom: 10px;
         text-align: center;
     }
