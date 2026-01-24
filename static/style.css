@@ -317,7 +317,7 @@ body {
         margin-left: 0;
         padding: 10px;
     }
-    .page-layout {
+    .hstack.page-layout {
         flex-direction: column-reverse;
         align-items: center;
     }
