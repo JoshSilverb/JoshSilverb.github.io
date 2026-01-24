@@ -74,16 +74,32 @@ body {
     grid-gap: 15px;
 }
 
+/* Flexbox layout utilities */
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-layout {
+    gap: 40px;
+}
+
+.page-content {
+    flex: 1;
+}
+
 .homepic {
-    float: right;
-    margin-left: 10px;
-    clear: both;
+    flex-shrink: 0;
 }
 
 .hometext {
-    margin-right: 0px;
-    overflow: auto;
-    display: block;
+    flex: 1;
 }
 
 .hometext a:link {
@@ -301,10 +317,12 @@ body {
         margin-left: 0;
         padding: 10px;
     }
+    .page-layout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     .homepic {
-        float: none;
-        display: block;
-        margin: 0 auto 10px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .gallery {
